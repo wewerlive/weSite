@@ -17,8 +17,7 @@ const TechStack: React.FC = () => (
     <div className="flex flex-col justify-center items-center ">
       <div className="container mx-auto lg:max-w-[70%] lg:px-10">
         <h3 className="text-3xl font-bold lg:4xl tracking-tight text-center px-10 !leading-[3.5rem]">
-          We believe in great communication and efficient productive
-          process.
+          We believe in great communication and efficient productive process.
         </h3>
       </div>
     </div>

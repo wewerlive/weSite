@@ -7,16 +7,11 @@ import {
   TilePage,
   TileWrapper,
 } from './utils/tile';
-import {
-  WorkContainer,
-  WorkLeft,
-  WorkRight,
-} from './utils/work';
+import { WorkContainer, WorkLeft, WorkRight } from './utils/work';
 
 const Works: React.FC = () => (
   <TileWrapper pages={3}>
-    <TileBackground>
-    </TileBackground>
+    <TileBackground></TileBackground>
     <TileContent>
       <TilePage
         page={0}
@@ -60,8 +55,7 @@ const Works: React.FC = () => (
         )}
       />
     </TileContent>
-    <TileBackground>
-    </TileBackground>
+    <TileBackground></TileBackground>
     <TileContent>
       <TilePage
         page={1}
@@ -104,8 +98,7 @@ const Works: React.FC = () => (
         )}
       />
     </TileContent>{' '}
-    <TileBackground>
-    </TileBackground>
+    <TileBackground></TileBackground>
     <TileContent>
       <TilePage
         page={2}
