@@ -1,0 +1,43 @@
+.skill {
+  transition: opacity 0.4s;
+}
+
+.viewport:global(.is-draggable) {
+  cursor: grab;
+  cursor: move;
+}
+
+.viewport:global(.is-dragging) {
+  cursor: grabbing;
+}
+
+.container {
+  user-select: none;
+}
+
+.slide {
+  flex: 0 0 auto;
+  max-width: min(70%, 620px);
+  opacity: 0.4;
+  transition: opacity 0.4s;
+}
+
+.slide:global(.active) {
+  opacity: 1;
+}
+
+.bg {
+  background: linear-gradient(
+    120deg,
+    #0000 0%,
+    #0000 2.9999%,
+    #ffff 30%,
+    #ffff 79.99999%,
+    #0000 98.9999%,
+    #0000 100%
+  );
+}
+
+.bgBtn {
+  background-image: url('/raindrops-animate.svg');
+}
