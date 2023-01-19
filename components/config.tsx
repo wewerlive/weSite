@@ -1,10 +1,10 @@
 import Head from 'next/head';
 
-const titleDefault = "We'wers";
+const titleDefault = "Wewer";
 const url = 'http://wewer.live';
 const description =
   'A 3D advertisement platform built with React Three Fiber, Next.js';
-const author = "We'wers";
+const author = "Wewer";
 
 const Heads = ({ title = titleDefault }) => {
   return (
