@@ -51,8 +51,8 @@ interface TileProps {
   children: React.ReactNode;
 }
 
-export const TileBackground: React.FC<TileProps> = ({ children }) => (
-  <div className="absolute h-full bg-black w-full"> {children}</div>
+export const TileBackground: React.FC = () => (
+  <div className="absolute h-full bg-black w-full"></div>
 );
 
 export const TileContent: React.FC<TileProps> = ({ children }) => (
