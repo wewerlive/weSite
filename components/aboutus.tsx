@@ -1,12 +1,9 @@
-import {
-  getSession,
-  GetSessionParams,
-  signIn,
-  signOut,
-  useSession,
-} from 'next-auth/react';
-import Link from 'next/link';
-import styles from '../styles/Home.module.css';
+import { getSession, GetSessionParams } from 'next-auth/react';
+// import Link from 'next/link';
+// import styles from '../styles/Home.module.css';
+// signIn,
+//   signOut,
+//   useSession,
 
 export const getServerSideProps = async (context: GetSessionParams) => {
   const session = await getSession(context);
@@ -18,7 +15,7 @@ export const getServerSideProps = async (context: GetSessionParams) => {
 };
 
 const AboutUs: React.FC = () => {
-  const { data: session } = useSession();
+  // const { data: session } = useSession();
   return (
     <section
       id="Join"
@@ -31,7 +28,7 @@ const AboutUs: React.FC = () => {
           different reality. Join us in this journey to explore the world of
           Virtual Reality.
         </p>
-        <div className="leading-tight items-center gap-9 flex max-w-5xl text-center mt-10 mx-auto text-xl tracking-tight ">
+        {/* <div className="leading-tight items-center gap-9 flex max-w-5xl text-center mt-10 mx-auto text-xl tracking-tight ">
           <button
             onClick={() => (session ? signOut() : signIn())}
             className={`${styles.bgBtn} bg-slate-400 text-black outline-none p-4 font-bold rounded-2xl hover:underline hover:underline-offset-4`}
@@ -52,7 +49,7 @@ const AboutUs: React.FC = () => {
               <a>Register</a>
             </Link>
           </h2>
-        </div>
+        </div> */}
       </div>
     </section>
   );
